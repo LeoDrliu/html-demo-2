@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 兼容手机，禁止缩放，默认生成后content中加上后三个 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>苏打绿</title>
     <style>
         img {
@@ -14,15 +16,24 @@
 </head>
 
 <body>
-    <h1>苏打绿</h1>
-    <img src="images/苏打绿.jpg" alt="图一">
+    <nav>
+        <ol>
+            <li><a href="#sodagreen">简介</a></li>
+            <li><a href="#members">主要成员</a></li>
+            <li><a href="#events">重要事件</a></li>
+            <li><a href="#products">音乐作品</a></li>
+        </ol>
+    </nav>
+    <h1 id="sodagreen">苏打绿</h1>
+    <!-- 图片只设宽度或者高度，不要让其变形 -->
+    <img src="images/sodagreen.jpg" alt="图一" width="600">
     <p>
         苏打绿（英语：Sodagreen，分身乐团鱼丁糸）是一个在2001年成立的台湾乐团。
         在2003年时它确定了现在的6人阵容：吴青峰（青峰、日出）、谢馨仪（香我）、史俊威（小威、八女）、何景扬（阿福、可田）、刘家凯（豕豆）、龚钰祺（阿龚、金八）。
         除龚钰祺毕业于国立台北艺术大学音乐研究所外，其余成员皆毕业于国立政治大学。
     </p>
 
-    <h2>成员</h2>
+    <h2 id="members">成员</h2>
     <table>
         <thead>
             <tr>
@@ -65,7 +76,7 @@
         </tbody>
     </table>
 
-    <h2>
+    <h2 id="events">
         重要事件
     </h2>
     <ul>
@@ -82,8 +93,8 @@
         <li>2020年2月23日，于吴青峰的“太空备忘记”台北场演唱会的安可曲中，发表全新单曲《Tomorrow will be fine.》，宣告即将全新出发。</li>
         <li>7月3日，宣布推出分身乐团“鱼丁糸”创立全新音乐品牌，鼓手八女（小威）表示鱼丁糸的唯一指导原则是不能像苏打绿，透露将展现出与苏打绿完全不同的面貌。</li>
     </ul>
-    <h2>音乐作品</h2>
 
+    <h2 id="products">音乐作品</h2>
     <h4>专辑</h4>
     <ol>
         <li>苏打绿（2005年）</li>
@@ -132,5 +143,7 @@
     </ol>
 
 </body>
+
+<aside><a target="_blank" href="https://zh.wikipedia.org/wiki/%E8%98%87%E6%89%93%E7%B6%A0">数据来源-维基百科</a></aside>
 
 </html>
